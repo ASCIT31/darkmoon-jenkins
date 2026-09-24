@@ -9,6 +9,22 @@ The plugin owns the Jenkins concerns (credentials, step configuration, result
 publishing, artifact archiving, fail policy). It delegates the OSS/Pro contract entirely
 to the portable [`darkmoon-ci`](https://github.com/ASCIT31) CLI, which it shells out to.
 
+## Screenshots
+
+Captured from a **real Jenkins LTS container** (`e2e/run-e2e.sh`) running a
+declarative pipeline against the synthetic **Demo Shop** campaign
+(`demo-shop.local`). Live web UI, not mockups.
+
+**Build result** — the `darkmoonScan` step ran, archived the report + SARIF, and
+the severity gate (`failOn: 'high'`) failed the build:
+
+![Jenkins build result](docs/screenshots/jenkins-build-result.png)
+
+**Warnings Next Generation issues view** — findings published as SARIF, with the
+severity donut, trend and per-issue details:
+
+![Warnings-NG issues view](docs/screenshots/jenkins-warnings-issues.png)
+
 ## Requirements
 
 - Jenkins **2.479+** (parent POM 5.x, JDK 17+ runtime).
