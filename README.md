@@ -12,8 +12,9 @@ to the portable [`darkmoon-ci`](https://github.com/ASCIT31) CLI, which it shells
 ## Requirements
 
 - Jenkins **2.479+** (parent POM 5.x, JDK 17+ runtime).
-- The [`darkmoon-ci`](https://www.npmjs.com/) CLI on the build agent's `PATH`
-  (`npm i -g @darkmoon/client`), plus Node.js 18+.
+- The [`darkmoon-ci`](https://www.npmjs.com/package/@darkmoon/client) CLI on the
+  build agent's `PATH`, plus Node.js 18+. Pin a compatible release
+  (`npm i -g @darkmoon/client@^0.1`) so the plugin talks to a `1.x`-contract CLI.
 - [Warnings Next Generation](https://plugins.jenkins.io/warnings-ng/) (installed as a
   dependency) to visualize/trend findings.
 - Credentials plugin + Plain Credentials plugin (installed as dependencies) for secrets.
@@ -66,6 +67,26 @@ optionally `licenseCredentialsId`. The plugin resolves it via the Jenkins Creden
 and passes it to `darkmoon-ci` **through the environment only**
 (`DARKMOON_PRO_TOKEN` / `DARKMOON_LICENSE`) — never on the command line, never in the
 console, never in an archived artifact.
+
+### Connecting to Darkmoon Pro
+
+```groovy
+node {
+  darkmoonScan(
+    target: 'https://staging.example.com',
+    mode: 'pro',
+    apiUrl: 'https://darkmoon.example.com',   // Pro REST base URL (https)
+    credentialsId: 'darkmoon-token',          // Secret Text -> DARKMOON_PRO_TOKEN
+    failOn: 'critical,high'
+  )
+  recordIssues(enabledForFailure: true, tools: [sarif(pattern: 'darkmoon-reports/darkmoon.sarif')])
+}
+```
+
+Pro auth is **token-only** in the plugin: obtain a JWT out of band and store it as a
+Secret Text credential. The interactive username/password + insecure-default
+handshake exposed by `@darkmoon/client` is intentionally not surfaced here (a CI
+job should carry a pre-issued token, not a password).
 
 ## Safety model (see THREAT-MODEL / §4)
 
