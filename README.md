@@ -18,12 +18,12 @@ declarative pipeline against the synthetic **Demo Shop** campaign
 **Build result** — the `darkmoonScan` step ran, archived the report + SARIF, and
 the severity gate (`failOn: 'high'`) failed the build:
 
-![Jenkins build result](docs/screenshots/jenkins-build-result.png)
+![Jenkins build result](https://raw.githubusercontent.com/ASCIT31/darkmoon-jenkins/master/docs/screenshots/jenkins-build-result.png)
 
 **Warnings Next Generation issues view** — findings published as SARIF, with the
 severity donut, trend and per-issue details:
 
-![Warnings-NG issues view](docs/screenshots/jenkins-warnings-issues.png)
+![Warnings-NG issues view](https://raw.githubusercontent.com/ASCIT31/darkmoon-jenkins/master/docs/screenshots/jenkins-warnings-issues.png)
 
 ## Requirements
 
