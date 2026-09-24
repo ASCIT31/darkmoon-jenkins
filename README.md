@@ -1,22 +1,23 @@
 # Darkmoon Security Scan — Jenkins plugin
 
 
-## ⭐ Star Darkmoon
+## ⭐ Darkmoon ecosystem
 
-Darkmoon is open-source and community-driven — **a star genuinely helps us.** If this is useful to you, please star:
+Darkmoon is open-source — **a star really helps us grow.** [![Star the Darkmoon core](https://img.shields.io/github/stars/ASCIT31/Dark-Moon?style=social&label=Star%20Darkmoon)](https://github.com/ASCIT31/Dark-Moon)
 
-[![Star the Darkmoon core](https://img.shields.io/github/stars/ASCIT31/Dark-Moon?style=social&label=Star%20the%20Darkmoon%20core)](https://github.com/ASCIT31/Dark-Moon)
+🌐 **Website:** [dark-moon.org](https://dark-moon.org) · 📚 **Docs:** [docs.dark-moon.org](https://docs.dark-moon.org) · ⭐ **Star the core:** [github.com/ASCIT31/Dark-Moon](https://github.com/ASCIT31/Dark-Moon)
 
-And the ecosystem: [GitHub Action](https://github.com/ASCIT31/darkmoon-action) · [GitLab](https://github.com/ASCIT31/darkmoon-gitlab) · [Jenkins](https://github.com/ASCIT31/darkmoon-jenkins) · [VS Code](https://github.com/ASCIT31/darkmoon-vscode) · [JetBrains](https://github.com/ASCIT31/darkmoon-jetbrains) · [Client & CLI](https://github.com/ASCIT31/darkmoon-client)
+**Install the integrations, right where you work:**
 
-Run [Darkmoon](https://github.com/ASCIT31) AI penetration-test campaigns from a Jenkins
-job or declarative pipeline, publish findings through **Warnings Next Generation**, and
-gate the build on severity — against **Darkmoon OSS** (local CLI) or **Darkmoon Pro**
-(REST API).
+| Platform | Get it |
+|---|---|
+| VS Code | [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Darkmoon.darkmoon-vscode) |
+| JetBrains | [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/34497-darkmoon) |
+| GitHub Actions | [GitHub Marketplace](https://github.com/marketplace/actions/darkmoon-pentest) |
+| GitLab CI/CD | [CI/CD Catalog](https://gitlab.com/explore/catalog/Dark-Moon-X/darkmoon-scan) |
+| Jenkins | [Download the .hpi](https://github.com/ASCIT31/darkmoon-jenkins/releases) |
+| Client & CLI | [npm: @darkmoon_ai/client](https://www.npmjs.com/package/@darkmoon_ai/client) |
 
-The plugin owns the Jenkins concerns (credentials, step configuration, result
-publishing, artifact archiving, fail policy). It delegates the OSS/Pro contract entirely
-to the portable [`darkmoon-ci`](https://github.com/ASCIT31) CLI, which it shells out to.
 
 ## Screenshots
 
