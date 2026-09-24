@@ -1,6 +1,6 @@
 # `darkmoon-ci` interface consumed by this plugin
 
-The plugin shells out to the portable `darkmoon-ci` CLI (built on `@darkmoon/client`,
+The plugin shells out to the portable `darkmoon-ci` CLI (built on `@darkmoon_ai/client`,
 contract v1.0.0). This document is the exact surface the plugin depends on; it is verified
 against the CLI's own conformance fixtures.
 

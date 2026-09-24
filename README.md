@@ -28,9 +28,9 @@ severity donut, trend and per-issue details:
 ## Requirements
 
 - Jenkins **2.479+** (parent POM 5.x, JDK 17+ runtime).
-- The [`darkmoon-ci`](https://www.npmjs.com/package/@darkmoon/client) CLI on the
+- The [`darkmoon-ci`](https://www.npmjs.com/package/@darkmoon_ai/client) CLI on the
   build agent's `PATH`, plus Node.js 18+. Pin a compatible release
-  (`npm i -g @darkmoon/client@^0.1`) so the plugin talks to a `1.x`-contract CLI.
+  (`npm i -g @darkmoon_ai/client@^0.1`) so the plugin talks to a `1.x`-contract CLI.
 - [Warnings Next Generation](https://plugins.jenkins.io/warnings-ng/) (installed as a
   dependency) to visualize/trend findings.
 - Credentials plugin + Plain Credentials plugin (installed as dependencies) for secrets.
@@ -101,7 +101,7 @@ node {
 
 Pro auth is **token-only** in the plugin: obtain a JWT out of band and store it as a
 Secret Text credential. The interactive username/password + insecure-default
-handshake exposed by `@darkmoon/client` is intentionally not surfaced here (a CI
+handshake exposed by `@darkmoon_ai/client` is intentionally not surfaced here (a CI
 job should carry a pre-issued token, not a password).
 
 ## Safety model (see THREAT-MODEL / §4)
