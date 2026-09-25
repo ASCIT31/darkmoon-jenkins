@@ -1,5 +1,7 @@
 # Darkmoon Security Scan — Jenkins plugin
 
+> **📦 Marketplace status:** `.hpi` available via [Releases](https://github.com/ASCIT31/darkmoon-jenkins/releases). Jenkins Update Center hosting **pending**.
+
 
 ## ⭐ Darkmoon ecosystem
 
