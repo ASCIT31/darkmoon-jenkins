@@ -42,7 +42,7 @@ severity donut, trend and per-issue details:
 - Jenkins **2.479+** (parent POM 5.x, JDK 17+ runtime).
 - The [`darkmoon-ci`](https://www.npmjs.com/package/@darkmoon_ai/client) CLI on the
   build agent's `PATH`, plus Node.js 18+. Pin a compatible release
-  (`npm i -g @darkmoon_ai/client@^0.1`) so the plugin talks to a `1.x`-contract CLI.
+  (`npm i -g @darkmoon_ai/client@^0.2`) so the plugin talks to a `1.x`-contract CLI.
 - [Warnings Next Generation](https://plugins.jenkins.io/warnings-ng/) (installed as a
   dependency) to visualize/trend findings.
 - Credentials plugin + Plain Credentials plugin (installed as dependencies) for secrets.
