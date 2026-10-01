@@ -147,3 +147,18 @@ model. An end-to-end example lives in [`examples/Jenkinsfile`](examples/Jenkinsf
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## 🎥 Video tutorial
+
+[![Watch the Darkmoon + Jenkins tutorial on YouTube](https://img.youtube.com/vi/G0TgyGpVLZ8/maxresdefault.jpg)](https://youtu.be/G0TgyGpVLZ8)
+
+▶ **[Watch the full Darkmoon + Jenkins tutorial on YouTube](https://youtu.be/G0TgyGpVLZ8)** — real setup, end to end.
+
+## Darkmoon ecosystem
+
+Darkmoon is an open-source, AI-powered penetration testing platform. It runs a full autonomous assessment and this integration brings the results into your Jenkins workflow.
+
+- ⭐ **Flagship (star it):** https://github.com/ASCIT31/Dark-Moon
+- 📚 **Docs:** https://docs.dark-moon.org
+- 🌐 **Website:** https://dark-moon.org
+- 🔗 **Related integrations:** [GitHub Actions](https://github.com/ASCIT31/darkmoon-action) · [GitLab CI/CD](https://github.com/ASCIT31/darkmoon-gitlab) 
